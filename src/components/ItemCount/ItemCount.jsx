@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 
 const ItemCount = ({stock, initial, onAdd}) => {
@@ -28,7 +28,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     return(
-        <div className="col-3">
+        <div className="col-md-4 d-flex flex-column">
             <div className="btn-group d-flex" role="group">
                 <button type="button" className="btn btn-outline-primary" onClick={() =>{
                     restarCantidad(cantidad - 1);

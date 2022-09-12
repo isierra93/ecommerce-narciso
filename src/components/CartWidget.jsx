@@ -5,6 +5,7 @@ const CartWidget = () =>{
     return(
         <div>
             <img src={imgCartWidget} alt="Cart widget" width={"45px"} height={"45px"} />
+            <span>0</span>
         </div>
     );
 };

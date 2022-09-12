@@ -1,13 +1,12 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import ItemList from "./ItemList/ItemList";
+import ItemDetail from "../Item/ItemDetail";
 
-const ItemListContainer = ({greeting}) =>{
+const ItemDetailContainer = () =>{
 
-    const [items, setItems] = useState([]);
-    useEffect(() => {
-
+    const [item, setItem] = useState([]);
+    useEffect( () =>{
         const productos = [
             {"id":1, "nombre":"Cactus","descripcion":"Descripcion de Cactus", "precio" : 1500, "imagen":"https://img.huffingtonpost.com/asset/5e7cd77a230000f2360c6d0b.jpeg?ops=scalefit_720_noupscale&format=webp"},
             {"id":2, "nombre":"Narcisos","descripcion":"Descripcion de Narcisos", "precio" : 1500, "imagen":"https://img.huffingtonpost.com/asset/5e7cd77a230000f2360c6d0b.jpeg?ops=scalefit_720_noupscale&format=webp"},
@@ -19,25 +18,23 @@ const ItemListContainer = ({greeting}) =>{
             {"id":8, "nombre":"Clavel","descripcion":"Descripcion de Clavel", "precio" : 1500, "imagen":"https://img.huffingtonpost.com/asset/5e7cd77a230000f2360c6d0b.jpeg?ops=scalefit_720_noupscale&format=webp"},
     ];
 
-        const promesa = new Promise((resolve, reject) => {
-            setTimeout(() =>{
-                resolve(productos);
-            }, 2000);
-        });
-        promesa.then( (respuesta) => {
-            setItems(respuesta);
-        });
-    }, []);
+    const promesa = new Promise((resolve, reject) => {
+        setTimeout(() =>{
+            resolve(productos);
+        }, 2000);
+    });
+    promesa.then( (respuesta) => {
+        let itemElegido = respuesta.find( (item) => item.id === 3 );
+        setItem(itemElegido);
+    });
 
+    },[])
 
     return(
         <div className="container">
-            <div className="row justify-content-center">
-            <h1 className="text-center">{greeting}</h1>
-            <ItemList items={items} />
-            </div>
+            <ItemDetail item={item} />
         </div>
-    );
+    )
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;
