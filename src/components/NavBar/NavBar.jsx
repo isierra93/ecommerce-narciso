@@ -1,9 +1,10 @@
 import React from "react";
-import CartWidget from "./CartWidget";
-import logo from "../assets/images/logo.png"
-import Promocion from "./Promocion";
+import CartWidget from "../NavBar/CartWidget";
+import logo from "../../assets/images/logo.png"
+import Promocion from "../NavBar/Promocion";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const NavBar = () => {
 
     return (
             <nav>
@@ -11,17 +12,17 @@ const Header = () => {
                 <ul className="nav justify-content-center p-3">
                     <img src={logo} alt="Logo" width={"45px"} height={"45px"} className="rounded" />
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="/#">Inicio</a>
+                        <Link to={`/`} className="nav-link" aria-current="page" href="/#">Inicio</Link>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Productos
                         </a>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="/#" >Plantas</a></li>
-                            <li><a className="dropdown-item" href="/#">Macetas</a></li>
-                            <li><a className="dropdown-item" href="/#">Semillas</a></li>
-                            <li><a className="dropdown-item" href="/#">Fertilizantes</a></li>
+                            <li><Link to={`/categoria/plantas`} className="dropdown-item">Plantas</Link></li>
+                            <li><Link to={`/categoria/semillas`} className="dropdown-item">Semillas</Link></li>
+                            <li><Link to={`/categoria/herramientas`} className="dropdown-item">Herramientas</Link></li>
+                            <li><Link to={`/categoria/fertilizantes`} className="dropdown-item">Fertilizantes</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item">
@@ -30,10 +31,12 @@ const Header = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="/#">Contacto</a>
                     </li>
+                    <button className="btn btn-outline-primary">
                     <CartWidget/>
+                    </button>
                 </ul>
             </nav>
     );
 };
 
-export default Header;
+export default NavBar;

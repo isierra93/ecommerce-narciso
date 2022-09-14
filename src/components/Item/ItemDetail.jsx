@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCount from "../ItemCount/ItemCount";
+import ItemCount from "../Item/ItemCount";
 
 const ItemDetail = ({item}) =>{
     return(
@@ -15,7 +15,7 @@ const ItemDetail = ({item}) =>{
                             <p className="card-text"><b>$ {item.precio}</b></p>
                         </div>
                         <div className="d-flex justify-content-center">
-                        <ItemCount stock={10} initial={1} onAdd={0} />
+                        <ItemCount stock={item.stock} initial={1} onAdd={0} />
                         </div>
                     </div>
                 </div>

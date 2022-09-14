@@ -1,0 +1,16 @@
+export const mockProductos = [
+    { "id": 1, "nombre": "Cactus", "descripcion": "Descripcion de Cactus", "precio": 1200, "stock": 12, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 2, "nombre": "Narcisos", "descripcion": "Descripcion de Narcisos", "precio": 1500, "stock": 16, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 3, "nombre": "Rosas", "descripcion": "Descripcion de Rosas", "precio": 100, "stock": 200, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 4, "nombre": "Crisantemos", "descripcion": "Descripcion de Crisantemos", "precio": 500, "stock": 2, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 5, "nombre": "Jazmin", "descripcion": "Descripcion de Jazmin", "precio": 14200, "stock": 23, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 6, "nombre": "Marimonias", "descripcion": "Descripcion de Marimonias", "precio": 10, "stock": 34, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 7, "nombre": "Fresias", "descripcion": "Descripcion de Fresias", "precio": 753, "stock": 65, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 8, "nombre": "Clavel", "descripcion": "Descripcion de Clavel", "precio": 342, "stock": 87, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 9, "nombre": "Pala", "descripcion": "Descripcion de Pala", "precio": 1899, "stock": 123, "categoria":"herramientas", "imagen": "https://www.segutecnica.com/images/000000000001865390882caterpillar-pala-de-punta-dielectrica-cabo-corto-cat-j10205-segutecnica.png" },
+    { "id": 10, "nombre": "Balde", "descripcion": "Descripcion de Balde", "precio": 342, "stock": 87, "categoria":"herramientas", "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/171/204/products/1181-8962a5bf912d10ae0916001741226911-640-0.jpg" },
+    { "id": 11, "nombre": "Semilla de Sandia", "descripcion": "Descripcion de Clavel", "precio": 32, "stock": 7, "categoria":"semillas", "imagen": "https://cdn.bioguia.com/embed/b307a5b5094e9bcc1dada8da32da1571147326/distintos-tipos-semilla-huerto.jpg" },
+    { "id": 12, "nombre": "Semilla de Melon", "descripcion": "Descripcion de Clavel", "precio": 42, "stock": 27, "categoria":"semillas", "imagen": "https://cdn.bioguia.com/embed/b307a5b5094e9bcc1dada8da32da1571147326/distintos-tipos-semilla-huerto.jpg" },
+    { "id": 13, "nombre": "Tomate", "descripcion": "Descripcion de Tomate", "precio": 130, "stock": 16, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },    
+
+];

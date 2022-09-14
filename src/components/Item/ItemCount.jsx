@@ -24,7 +24,6 @@ const ItemCount = ({stock, initial, onAdd}) => {
             setItemStock(itemStock - valor);
             setiCantidad(1);
         }
-        
     }
 
     return(
