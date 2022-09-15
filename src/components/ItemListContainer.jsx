@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import ItemList from "../Item/ItemList";
-import { fetchApi } from "../fetchProducts";
+import { fetchApi } from "../components/fetchProducts";
 import { useParams } from "react-router-dom";
+
+import ItemList from "../components/ItemList";
 
 const ItemListContainer = ({greeting}) =>{
 

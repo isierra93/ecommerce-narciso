@@ -1,7 +1,7 @@
 import React from "react";
-import CartWidget from "../NavBar/CartWidget";
-import logo from "../../assets/images/logo.png"
-import Promocion from "../NavBar/Promocion";
+import CartWidget from "../components/CartWidget";
+import logo from "../assets/images/logo.png"
+import Promocion from "../components/Promocion";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
