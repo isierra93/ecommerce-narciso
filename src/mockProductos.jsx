@@ -1,5 +1,5 @@
 export const mockProductos = [
-    { "id": 1, "nombre": "Cactus", "descripcion": "Descripcion de Cactus", "precio": 1200, "stock": 12, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
+    { "id": 1, "nombre": "Cactus", "descripcion": "Descripcion de Cactus", "precio": 1200, "stock": 0, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
     { "id": 2, "nombre": "Narcisos", "descripcion": "Descripcion de Narcisos", "precio": 1500, "stock": 16, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
     { "id": 3, "nombre": "Rosas", "descripcion": "Descripcion de Rosas", "precio": 100, "stock": 200, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
     { "id": 4, "nombre": "Crisantemos", "descripcion": "Descripcion de Crisantemos", "precio": 500, "stock": 2, "categoria":"plantas", "imagen": "https://www.lifeder.com/wp-content/uploads/2019/11/flor-de-loto-Nelumbo-nucifera-1024x771.jpg" },
