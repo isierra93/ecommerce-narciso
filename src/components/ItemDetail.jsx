@@ -2,14 +2,16 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
+import {useCartContext} from "./CartContext"
 
 const ItemDetail = ({item}) =>{
 
     const [goCart, setGocart] = useState(false);
+    const {addProduct} = useCartContext();
 
     const onAdd = (unidades) =>{
-        console.log(unidades);
         setGocart(true);
+        addProduct(item, unidades);
     }
 
     return(
@@ -27,7 +29,7 @@ const ItemDetail = ({item}) =>{
                         <div className="d-flex justify-content-center">
                         {
                             goCart
-                            ? <Link to={`/cart`} >Terminar compra</Link>
+                            ? <Link to={`/cart`} className="btn btn-primary">Terminar compra</Link>
                             :<ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
                         }
                         </div>

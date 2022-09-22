@@ -3,8 +3,10 @@ import CartWidget from "../components/CartWidget";
 import logo from "../assets/images/logo.png"
 import Promocion from "../components/Promocion";
 import { Link } from "react-router-dom";
+import { useCartContext } from "./CartContext";
 
 const NavBar = () => {
+    const {cart} = useCartContext();
 
     return (
         <nav>
@@ -31,9 +33,12 @@ const NavBar = () => {
                 <li className="nav-item">
                     <a className="nav-link" href="/#">Contacto</a>
                 </li>
-                <button className="btn btn-outline-primary">
+                {
+                    cart.length>0 ?
                     <CartWidget />
-                </button>
+                    :<div></div>
+                }
+                
             </ul>
         </nav>
     );
