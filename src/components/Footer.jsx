@@ -14,9 +14,9 @@ const Footer = () =>{
             <div className="col-md-6">
                 <h5>Nuestras redes</h5>
                     <ul className="nav d-flex flex-column">
-                        <li className="nav-item"><img src={logoInstagram} alt="logo Instagram" className="logoFooter "/><p>Instagram</p></li>
-                        <li className="nav-item"><img src={logoFacebook} alt="logo Facebook" className="logoFooter "/><p>Facebook</p></li>
-                        <li className="nav-item"><img src={logoTiktok} alt="logo TikTok" className="logoFooter "/><p>TikTok</p></li>
+                        <li key={logoInstagram} className="nav-item"><img src={logoInstagram} alt="logo Instagram" className="logoFooter "/><p>Instagram</p></li>
+                        <li key={logoFacebook} className="nav-item"><img src={logoFacebook} alt="logo Facebook" className="logoFooter "/><p>Facebook</p></li>
+                        <li key={logoTiktok} className="nav-item"><img src={logoTiktok} alt="logo TikTok" className="logoFooter "/><p>TikTok</p></li>
                     </ul>
             </div>
             </div>

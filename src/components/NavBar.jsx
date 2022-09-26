@@ -36,7 +36,7 @@ const NavBar = () => {
                 {
                     cart.length>0 ?
                     <CartWidget />
-                    :<div></div>
+                    : null
                 }
                 
             </ul>
