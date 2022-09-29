@@ -1,7 +1,5 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import { fetchApi } from "../components/fetchProducts";
+import React , { useEffect , useState } from "react";
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 
 import ItemList from "../components/ItemList";
@@ -14,14 +12,17 @@ const ItemListContainer = ({greeting}) =>{
 
     useEffect(() => {
         
-        if(!categoria){
-            fetchApi().then(response =>{
-                setItems(response);
-            });
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, `items`);
+
+        if(categoria){
+            const queryFilter = query(queryCollection, 
+            where(`categoria`, `==`, categoria));
+            getDocs(queryFilter)
+            .then(res => setItems(res.docs.map(producto => ({id:producto.id, ...producto.data()}))));
         }else{
-            fetchApi().then(response =>{
-                setItems(response.filter(cat => cat.categoria === categoria) )
-            })
+            getDocs(queryCollection)
+            .then(res => setItems(res.docs.map(producto => ({id:producto.id, ...producto.data()}))));
         }
     },[categoria]);
 

@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React , { useState } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import {useCartContext} from "./CartContext"
@@ -29,8 +28,8 @@ const ItemDetail = ({item}) =>{
                         <div className="d-flex justify-content-center">
                         {
                             goCart
-                            ? <Link to={`/cart`} className="btn btn-primary">Terminar compra</Link>
-                            :<ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+                            ? <Link to={`/cart`} className="btn btn-primary mb-2">Terminar compra</Link>
+                            :<ItemCount initial={1} onAdd={onAdd} stock={item.stock}/>
                         }
                         </div>
                     </div>
