@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <nav>
             <Promocion bannerPromo="15% DE DESCUENTO EN PLANTAS PAGANDO EN EFECTIVO. 3 Y 6 CUOTAS SIN INTERES CON TARJETA. ENVIO GRATIS EN COMPRAS SUPERIORES A $7900, DENTRO DE CABA." />
-            <ul className="nav justify-content-center p-3 bg-light">
+            <ul className="nav justify-content-center p-3 navbar-light bg-light text-white">
                 <img src={logo} alt="Logo" width={"45px"} height={"45px"} className="rounded" />
                 <li className="nav-item">
                     <Link to={`/`} className="nav-link" aria-current="page" href="/#">Inicio</Link>

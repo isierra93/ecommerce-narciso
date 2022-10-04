@@ -7,9 +7,9 @@ const Item = ({ id, nombre, precio, imagen }) => {
             <div key={id} className="card">
                 <img src={imagen} className="card-img-top" alt={nombre} />
                 <div className="card-body text-center">
-                    <h5 className="card-title">{nombre}</h5>
+                    <h5 className="card-title"><strong>{nombre}</strong></h5>
                     <p className="card-text"><b>$ {precio}</b></p>
-                    <Link to={`/item/${id}`} className="btn btn-primary">Ver detalles</Link>
+                    <Link to={`/item/${id}`} className="btn btn-outline-info">Ver detalles</Link>
                 </div>
             </div>
         </div>

@@ -17,11 +17,11 @@ const ItemDetail = ({item}) =>{
             <div className="card mb-3">
                 <div className="row g-0">
                     <div className="col-md-4 d-flex justify-content-center">
-                        <img src={item.imagen} className="img-fluid rounded img-thumbnail" alt={item.nombre} />
+                        <img src={item.imagen} className="img-fluid" alt={item.nombre} />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body text-center">
-                            <h5 className="card-title py-3">{item.nombre}</h5>
+                            <h3 className="card-title py-3"><strong>{item.nombre}</strong></h3>
                             <p className="card-text pb-2">{item.descripcion}</p>
                             <p className="card-text"><b>$ {item.precio}</b></p>
                         </div>
