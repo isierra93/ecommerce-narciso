@@ -8,7 +8,7 @@ const Checkout = ({id}) =>{
                 <h2>Compra generada!</h2>
                 <p>Gracias por su compra!</p>
                 <p>Su ID de compra es:</p>
-                <h3>{id}</h3>
+                <h3 className="text-success"><strong>{id}</strong></h3>
             </div>
             <div className="row">
                 <img className="rounded" height={"500rem"} src="https://thumbs.gfycat.com/MatureWellinformedConure-size_restricted.gif" alt="Plants are friends" />

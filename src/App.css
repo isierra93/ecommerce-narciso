@@ -15,3 +15,9 @@
     height: 1rem;
     width: 1rem;
 }
+.itemDetailContainer{
+    min-height: 53vh;
+}
+.form-group{
+    min-height: 53vh;
+}

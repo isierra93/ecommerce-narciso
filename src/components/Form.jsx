@@ -40,8 +40,10 @@ const Form = () => {
     return (
         <div className="d-flex justify-content-center">
             {orderId === "" ?
-                <form className="form-group" action="" onSubmit={generarOrden}>
+                <form className="form-group d-flex flex-column mt-5 mb-5" action="" onSubmit={generarOrden}>
+                    <h2 className="text-center mb-3">Formulario de compra</h2>
                     <input
+                        className="mb-3 mt-3"
                         type="text"
                         name="nombre"
                         placeholder="Nombre completo"
@@ -50,6 +52,7 @@ const Form = () => {
                         required
                     />
                     <input
+                    className="mb-3"
                         type="number"
                         name="telefono"
                         placeholder="Telefono"
@@ -58,6 +61,7 @@ const Form = () => {
                         required
                     />
                     <input
+                    className="mb-3"
                         type="email"
                         name="email"
                         placeholder="Email"
@@ -65,7 +69,7 @@ const Form = () => {
                         onChange={obtenerEmail}
                         required
                     />
-                    <div>
+                    <div className="d-flex justify-content-center mt-5">
                         <button className="btn btn-success">Confirmar</button>
                     </div>
                 </form>

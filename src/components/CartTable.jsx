@@ -6,7 +6,7 @@ const CartTable = ({ id, nombre, precio, imagen, cantidad }) => {
 
     return (
         <tr key={id}>
-            <th scope="row" ><img src={imagen} alt={nombre} width={85} className="img-fluid" /></th>
+            <th scope="row" ><img src={imagen} alt={nombre} width={80} height={80} /></th>
             <td>{nombre}</td>
             <td>{cantidad}</td>
             <td>{precio}</td>
