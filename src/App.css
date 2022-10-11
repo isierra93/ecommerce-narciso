@@ -1,9 +1,9 @@
-.containerbanner{
-    height: 14rem;
-}
-.imgBanner{
-    height: 15rem;
-}
+/* .navbarContainer{
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    padding-top: 0;
+} */
 .card-img-top{
     height: 16rem;
 }
@@ -20,4 +20,15 @@
 }
 .form-group{
     min-height: 53vh;
+}
+.logoWhatsapp{
+    position: fixed;
+    line-height: 3rem;
+    bottom: 3rem;
+    right: 3rem;
+    
+}
+.logoWhatsapp img{
+    width: 4rem;
+    height: 4rem;
 }

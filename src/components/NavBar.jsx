@@ -9,18 +9,18 @@ const NavBar = () => {
     const {cart} = useCartContext();
 
     return (
-        <nav>
+        <nav className="navbarContainer">
             <Promocion bannerPromo="15% DE DESCUENTO EN PLANTAS PAGANDO EN EFECTIVO. 3 Y 6 CUOTAS SIN INTERES CON TARJETA. ENVIO GRATIS EN COMPRAS SUPERIORES A $7900, DENTRO DE CABA." />
-            <ul className="nav justify-content-center p-3 navbar-light bg-light text-white">
+            <ul className="nav justify-content-center p-3 bg-success">
                 <img src={logo} alt="Logo" width={"45px"} height={"45px"} className="rounded" />
                 <li className="nav-item">
-                    <Link to={`/`} className="nav-link" aria-current="page" href="/#">Inicio</Link>
+                    <Link to={`/`} className="nav-link" aria-current="page" href="/">Inicio</Link>
                 </li>
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Productos
                     </a>
-                    <ul className="dropdown-menu">
+                    <ul className="dropdown-menu bg-success">
                         <li><Link to={`/categoria/plantas`} className="dropdown-item">Plantas</Link></li>
                         <li><Link to={`/categoria/semillas`} className="dropdown-item">Semillas</Link></li>
                         <li><Link to={`/categoria/herramientas`} className="dropdown-item">Herramientas</Link></li>
@@ -28,10 +28,10 @@ const NavBar = () => {
                     </ul>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#">Envios</a>
+                    <Link to={`envios`} className="nav-link">Envios</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#">Contacto</a>
+                    <Link to={`contacto`} className="nav-link">Contacto</Link>
                 </li>
                 {
                     cart.length>0 ?

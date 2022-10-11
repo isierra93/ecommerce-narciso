@@ -41,7 +41,7 @@ const Form = () => {
         <div className="d-flex justify-content-center">
             {orderId === "" ?
                 <form className="form-group d-flex flex-column mt-5 mb-5" action="" onSubmit={generarOrden}>
-                    <h2 className="text-center mb-3">Formulario de compra</h2>
+                    <h1 className="text-center mb-5 mt-3">Formulario de compra</h1>
                     <input
                         className="mb-3 mt-3"
                         type="text"
