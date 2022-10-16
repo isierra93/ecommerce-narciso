@@ -9,7 +9,7 @@ const Cart = () => {
 
     if (cart.length > 0) {
         return (
-            <div className="container mt-5 mb-5">
+            <div className="container mt-5 mb-5 viewContainer">
                 <div className="row">
                     <h2 className="mt-5">Listado de productos:</h2>
                     <table className="table mt-5">
@@ -41,9 +41,9 @@ const Cart = () => {
     }
 
     return (
-        <div className="container d-flex justify-content-center flex-column text-center">
+        <div className="container d-flex justify-content-center flex-column text-center viewContainer">
             <div className="mt-5 mb-5">
-                <h2>No has agregado productos aun!</h2>
+                <h2 className="mb-5">No has agregado productos aun!</h2>
                 <Link to={`/`} className="btn btn-primary">Ir a inicio</Link>
             </div>
         </div>

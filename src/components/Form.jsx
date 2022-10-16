@@ -38,7 +38,7 @@ const Form = () => {
 
 
     return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center viewContainer">
             {orderId === "" ?
                 <form className="form-group d-flex flex-column mt-5 mb-5" action="" onSubmit={generarOrden}>
                     <h1 className="text-center mb-5 mt-3">Formulario de compra</h1>

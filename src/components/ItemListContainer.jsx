@@ -27,7 +27,7 @@ const ItemListContainer = ({greeting}) =>{
     },[categoria]);
 
     return(
-        <div className="container mt-5">
+        <div className="container mt-5 viewContainer">
             <div className="row justify-content-center">
             <h1 className="text-center">{greeting} {categoria}</h1>
             <ItemList items={items} />

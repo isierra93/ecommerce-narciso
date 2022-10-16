@@ -3,12 +3,12 @@ import mapa from "../assets/images/mapaenvios.png"
 
 const Delivery = () => {
     return (
-        <section>
-            <div>
+        <section className="d-flex flex-column justify-content-center container mt-5 viewContainer deliveryContainer">
+            <div className="mt-5 pb-3">
                 <h3>En este menú encontrarás toda la información que necesitas saber sobre los envíos a domiclio:</h3>
             </div>
             <div>
-                <ul>
+                <ul className="text-success">
                     <li>Formas de Pago</li>
                     <li>Plazos de entrega</li>
                     <li>Zonas de entrega</li>
@@ -18,7 +18,6 @@ const Delivery = () => {
                     <li>Condiciones de entrega</li>
                 </ul>
             </div>
-
             <div>
                 <h5>¿Cómo abono el envío de mi pedido?</h5>
                 <p>Para CABA, el costo de envío se abona directamente por la Tienda Online según el barrio en el que debemos realizar la entrega, el volumen y el peso de tu pedido.
@@ -31,9 +30,9 @@ const Delivery = () => {
                 <p>Narciso Store no cuenta con un servicio propio de entregas, trabajamos con una agencia de fletes de confianza muy experimentada en el traslado de plantas, macetas y de artículos de jardinería. Esto nos asegura que los productos lleguen a tu hogar tal cual salieron del vivero.</p>
 
                 <h5>¿Cuales son las zonas de entrega?</h5>
-                <p>Las tarifas podes verlas en el calculador de costos del carrito.</p>
+                <p>Las tarifas podes verlas en el calculador de costos del carrito:</p>
             </div>
-            <div>
+            <div className="my-3">
                 <img src={mapa} alt="Mapa de envios" />
             </div>
             <div>
@@ -53,26 +52,26 @@ const Delivery = () => {
                 <p>En el calculador de costos del carrito de compras de la tienda online, figura la tarifa base según el barrio y el tamaño. Esta tarifa puede tener adicionales
                     según el volumen que ocupe tu pedido y el peso total de la compra.
                     Una vez hecha la compra, te contactaremos por Whatsapp desde el sector de envíos, para informarte del estado de tu pedido. De corresponder un adicional por
-                    peso y/o volumen, te lo informaremos por ese medio. Si tenes dudas sobre el costo de entrega, escribinos por WhatsApp haciendo 
+                    peso y/o volumen, te lo informaremos por ese medio. Si tenes dudas sobre el costo de entrega, escribinos por WhatsApp haciendo
                     <a target="_blank" href="https://www.youtube.com/watch?v=vgd-95t-jR4" rel="noreferrer">click acá</a>.</p>
 
 
-            <h5>¿Hacen envíos al interior?</h5>
-            <p>No realizamos entregas al interior del país. Solo trabajamos en CABA y Gran Buenos Aires.
-                La opción que podemos ofrecerte es que contrates un expreso privado o un comisionista que se encargue de retirar los productos, nosotros los embalaremos y
-                prepararemos adecuadamente para el viaje.</p>
+                <h5>¿Hacen envíos al interior?</h5>
+                <p>No realizamos entregas al interior del país. Solo trabajamos en CABA y Gran Buenos Aires.
+                    La opción que podemos ofrecerte es que contrates un expreso privado o un comisionista que se encargue de retirar los productos, nosotros los embalaremos y
+                    prepararemos adecuadamente para el viaje.</p>
 
-            <h5>Condiciones de entrega</h5>
-            <p>No tenemos envíos sin cargo, trabajamos con una agencia de fletes de confianza (podés ver las tarifas en el carrito de compras de nuestra Tienda Online).
-                Los costos del envío a domicilio quedan siempre a cargo del cliente, siendo este quien los deba abonar en todos los casos.
-                Las ventas están sujetas a un tiempo de proceso de hasta 3 días hábiles en el horario laboral de Lunes a Sábados de 10 a 18 hs.
-                La Tienda Online no trabaja los Domingos.</p>
+                <h5>Condiciones de entrega</h5>
+                <p>No tenemos envíos sin cargo, trabajamos con una agencia de fletes de confianza (podés ver las tarifas en el carrito de compras de nuestra Tienda Online).
+                    Los costos del envío a domicilio quedan siempre a cargo del cliente, siendo este quien los deba abonar en todos los casos.
+                    Las ventas están sujetas a un tiempo de proceso de hasta 3 días hábiles en el horario laboral de Lunes a Sábados de 10 a 18 hs.
+                    La Tienda Online no trabaja los Domingos.</p>
 
-            <p><small className="text-muted">Es importante que nos proporciones una dirección válida en el caso de que hayas solicitado un envío a domicilio.
-                Si los datos brindados por el cliente son incorrectos y por ese motivo el transporte no puede localizar ni entregar el pedido en destino, corresponde al cliente cubrir los costos
-                adicionales de la entrega. En el caso de que el cliente no se encuentre en el domiclio, en el rango horario indicado y la agencia de fletes no pueda concretar la entrega,
-                el cliente deberá volver a abonar el costo de envío.</small></p>
-        </div>
+                <p><small className="text-muted">Es importante que nos proporciones una dirección válida en el caso de que hayas solicitado un envío a domicilio.
+                    Si los datos brindados por el cliente son incorrectos y por ese motivo el transporte no puede localizar ni entregar el pedido en destino, corresponde al cliente cubrir los costos
+                    adicionales de la entrega. En el caso de que el cliente no se encuentre en el domiclio, en el rango horario indicado y la agencia de fletes no pueda concretar la entrega,
+                    el cliente deberá volver a abonar el costo de envío.</small></p>
+            </div>
         </section >
     );
 };

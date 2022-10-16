@@ -17,7 +17,8 @@ const ItemDetailContainer = () => {
     },[id])
 
     return (
-        <div className="container mt-5 mb-5 itemDetailContainer">
+        <div className="container mt-5 mb-5 viewContainer">
+            <h2 className="pb-4 d-flex justify-content-center">Descripcion</h2>
             <ItemDetail item={item} />
         </div>
     )

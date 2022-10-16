@@ -14,7 +14,7 @@ const ItemDetail = ({ item }) => {
     }
 
     return (
-        <div className="card mb-3">
+        <div className="card mb-5">
             <div className="row g-0">
                 <div className="col-md-4 d-flex justify-content-center">
                     <img src={item.imagen} className="img-fluid" alt={item.nombre} />
