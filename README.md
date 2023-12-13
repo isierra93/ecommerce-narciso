@@ -1,12 +1,43 @@
-# Getting Started with Create React App
+# Aplicacion Ecommerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicacion que simula un Ecommerce creada con React. Se puede realizar filtrado de productos y cuenta con carrito de compras.
+Se pueden cargar formulario de consultas y cargar ordenes de compras, la cual genera un ID de transaccion.
+La base de datos esta en Firebase.
 
-# Proyecto para curso de React en CoderHouse 💻
+## Deploy
+-[Narciso Ecommerce](https://ecommerce-narciso.vercel.app/)
 
-El objetivo del curso es crear una aplicación que simule ser un e-commerce de plantas, herramientas de jardineria, etc.
+## Screenshoot
+![Logo](https://i.postimg.cc/gc45dV0X/narciso1-min.png)
 
-Se puede clonar desde su repositorio:
-[Narciso app 🌼](https://github.com/isierra93/coderhouserReact.git)
 
-Desde el Inicio se puede ver todo el listado de productos, si no se puede acceder a filtrados por categoria en la pestaña productos.
+## Base de datos utilizada
+
+- [Firebase](https://firebase.google.com/)
+
+
+## Ejectuar localmente
+
+Clonar el proyecto
+
+```bash
+  git clone https://github.com/isierra93/ecommerce-narciso
+```
+
+Ir al directorio del proyecto
+
+```bash
+  cd ecommerce-narciso
+```
+
+Instalar dependencias
+
+```bash
+  npm install
+```
+
+Ejecutar el servidor local
+
+```bash
+  npm start
+```
