@@ -8,7 +8,7 @@ La base de datos esta en Firebase.
 -[Narciso Ecommerce](https://ecommerce-narciso.vercel.app/)
 
 ## Screenshoot
-![Logo](https://i.postimg.cc/gc45dV0X/narciso1-min.png)
+![Logo](https://i.postimg.cc/L8NnjBNG/narciso2-min.png)
 
 
 ## Base de datos utilizada
