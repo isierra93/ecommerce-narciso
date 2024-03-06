@@ -14,7 +14,7 @@ const Footer = () =>{
             <div className="col-md-6">
                 <h5>Nuestras redes</h5>
                     <ul className="nav d-flex flex-column">
-                        <li key={logoInstagram} className="nav-item linksFooter"><img src={logoInstagram} alt="logo Instagram" className="logoFooter "/><a href="https://www.sancorsalud.com.ar/login/asociados" rel="noreferrer" target="_blank">Instagram</a></li>
+                        <li key={logoInstagram} className="nav-item linksFooter"><img src={logoInstagram} alt="logo Instagram" className="logoFooter "/><a href="https://www.instagram.com.ar" rel="noreferrer" target="_blank">Instagram</a></li>
                         <li key={logoFacebook} className="nav-item linksFooter"><img src={logoFacebook} alt="logo Facebook" className="logoFooter "/><a href="https://www.facebook.com.ar" rel="noreferrer" target="_blank">Facebook</a></li>
                         <li key={logoTiktok} className="nav-item linksFooter"><img src={logoTiktok} alt="logo TikTok" className="logoFooter "/><a href="https://www.tiktok.com.ar" rel="noreferrer" target="_blank">TikTok</a></li>
                     </ul>
