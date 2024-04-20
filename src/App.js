@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-
 import CartProvider from "./components/CartContext";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer";
@@ -11,11 +10,11 @@ import 'bootswatch/dist/sketchy/bootstrap.min.css';
 import Delivery from "./components/Delivery";
 import Contact from "./components/Contact";
 import BotonWhatsapp from "./components/BotonWhatsapp";
-
+import Checkout from "./components/Checkout.jsx";
 
 function App() {
   return (
-    <div>
+    <>
       <CartProvider>
         <NavBar />
         <Routes>
@@ -26,11 +25,12 @@ function App() {
           <Route path="/item/:id" element={<ItemDetailContainer />} />
           <Route path="cart" element={<Cart />} />
           <Route path="form" element={<Form />} />
+          <Route path="payed" element={<Checkout />} />
         </Routes>
       </CartProvider>
       <BotonWhatsapp />
       <Footer />
-    </div>
+    </>
   );
 }
 
