@@ -47,5 +47,9 @@
     height: 87vh;
 }
 .img-checkout{
-    width: 50rem
+    width: 30rem;
+    height: 25rem;
+}
+.payedContainer{
+    height: 85vh;
 }
