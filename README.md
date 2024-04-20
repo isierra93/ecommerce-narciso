@@ -1,8 +1,8 @@
 # Aplicacion Ecommerce
 
 Aplicacion que simula un Ecommerce creada con React. Se puede realizar filtrado de productos y cuenta con carrito de compras.
-Se pueden cargar formulario de consultas y cargar ordenes de compras, la cual genera un ID de transaccion.
-La base de datos esta en Firebase.
+Se pueden cargar formulario de consultas y compras, se genera Checkout con Mercadopago.
+La base de datos de pagos esta en Supabase y la de productos/consultas en Firebase. 
 
 ## Deploy
 -[Narciso Ecommerce](https://ecommerce-narciso.vercel.app/)
