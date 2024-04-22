@@ -42,10 +42,10 @@ const Form = () => {
 
     const createPreference = async () => {
         try {
-            const response = await axios.post('https://node-js-mercadopago.vercel.app/api/create-order', {
+            const response = await axios.post(process.env.REACT_APP_URL_NODEJSMERCADOPAGO, {
                 titleProducts: 'Narciso Store',
                 totalPrice: totalPrice(),
-                url_redirect: 'https://ecommerce-narciso.vercel.app/payed'
+                url_redirect: process.env.REACT_APP_URL_REDIRECT
             })
 
             const { id } = response.data
